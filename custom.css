@@ -1,0 +1,15 @@
+:root {
+    --avatar-size: 32px;
+    --home-image: url('https://i.imgur.com/233d55Y.gif');
+}
+div[data-list-item-id="guildsnav___home"] {
+    background: var(--home-image) top center/110% no-repeat;
+}
+div[id^="chat-messages-"][class*="cozy-"] {
+    padding-left: calc(var(--avatar-size) * 2);
+}
+div[id^="chat-messages-"]>div>[class^="avatar-"] {
+    margin-top: 6px;
+    width: var(--avatar-size);
+    height: var(--avatar-size);
+}
